@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lazy JSON Viewer</title>
+	<meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link href="lazyjsonviewer.css" rel="stylesheet" />
+    <script src="lazyjsonviewer.js"></script>
+</head>
+<body>
+    <div id="sampleJson"></div>
+    <script>
+        var sample = {
+            foo: 0,
+            bar: "abc",
+            isFancy: true,
+            isBoring: false,
+            lines: "one\ntwo\nthree",
+            quotes: 'one "two" three',
+            multistring: "This is a\n\"fur\" coat\n so there",
+            arr: [1, 2, 3],
+            blah: null,
+            emptyArr: [],
+            x: {
+                a: "something",
+                b: 125749,
+                x: {
+                    c: "needs",
+                    d: "nothing",
+                    x: {
+                        e: 123,
+                        f: 456,
+                        g: "the end"
+                    }
+                }
+            }
+        };
+        $("#sampleJson").jsonViewer(sample);
+    </script>
+</body>
+</html>

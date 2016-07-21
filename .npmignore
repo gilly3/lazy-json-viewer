@@ -1,0 +1,11 @@
+/bin
+/obj
+*.suo
+/.vs
+/.vscode
+*.log
+*.sln
+*.njsproj
+.editorconfig
+Rebracer.xml
+gulpfile.js

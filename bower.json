@@ -1,0 +1,30 @@
+{
+  "name": "lazy-json-viewer",
+  "main": "lazyjsonviewer.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/gilly3/lazy-json-viewer",
+  "authors": [
+    "Ivan Gilchrist"
+  ],
+  "description": "Expandable, collapsible, skinable, browser-based JSON viewer.  Renders nodes on demand, rather than all at once.",
+  "keywords": [
+    "json",
+    "viewer",
+    "jquery"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "ignore": [
+    "*.md",
+    "*.png",
+    ".gitignore",
+    ".editorconfig",
+    ".jshintignore",
+    ".npmignore",
+    "package.json",
+    "Rebracer.xml",
+    "test.html"
+  ]
+}

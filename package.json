@@ -1,0 +1,16 @@
+{
+  "name": "lazy-json-viewer",
+  "version": "1.0.0",
+  "description": "Expandable, collapsible, skinable, browser-based JSON viewer.  Renders nodes on demand, rather than all at once.",
+  "main": "lazyjsonviewer.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilly3/lazy-json-viewer.git"
+  },
+  "author": "Ivan Gilchrist",
+  "bugs": {
+    "url": "https://github.com/gilly3/lazy-json-viewer/issues"
+  },
+  "homepage": "https://github.com/gilly3/lazy-json-viewer#readme",
+  "license": "Apache-2.0"
+}
