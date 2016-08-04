@@ -2,6 +2,20 @@
 
 A jQuery plugin for viewing JSON in a web browser.
 
+## Get it
+
+[npm](https://www.npmjs.com/package/lazy-json-viewer):
+
+```sh
+$ npm i -S lazy-json-viewer
+```
+
+bower:
+
+```sh
+$ bower install lazy-json-viewer -S
+```
+
 ## Usage
 
 Include jQuery, the stylesheet, and the script file in the page.  Add an element to hold the json viewer.
@@ -27,3 +41,26 @@ var obj = {
 };
 $("#json").jsonViewer(obj);
 ```
+
+## Customize
+
+This package comes with a default stylesheet, but you can override its styles in your own stylesheet, or completely replace it.
+
+### Classes
+
+* `.lazy-json-viewer` - The root element which is appended to your target element has this class.
+* `.*-value` - Each element containing a value is given a class name consisting of its type, followed by `-value`. Eg: `.null-value`, `.array-value`, `.object-value`, `.string-value`, `.number-value`, `.boolean-value`.  The html contains only the raw value. Quotes and brackets are added with css:
+
+```css
+.lazy-json-viewer .array-value > ::before { content: "["; }
+.lazy-json-viewer .array-value > ::after  { content: "]"; }
+```
+
+* `.value-summary` - This is a child element of `.object-value` or `.array-value` that contains the value that is displayed while collapsed (either the length of the array, or the number of properties in the object).
+* `.content` - This is a child element of `.object-value` or `.array-value` that contains the full expanded value.
+* `.property` - This is a child element of `.content` that contains information about a single Object property or Array element.
+* `.property-name` - This is a child element of `.property` that contains the property name or array index.  It is followed by a `.*-value` sibling element (see above).
+* `.json-expander` - This class is added to `.property-name` elements for expandable properties (non-empty objects and arrays, and multiline strings).  It adds a clickable indicator (via `::before`) to expand and collapse the property value.
+* `.collapsed` - This class is added to `.property` elements to hide the `.value-summary` and show the `.content`.
+* `.multiline` - This class is added to `.string-value` elements when the value contains a line break.
+* `.containsQuote` - This class is added to `.string-value` elements when the value contains a double quote character (and does not contain a backtick character).
