@@ -2,7 +2,7 @@
 
 A jQuery plugin for viewing JSON in a web browser.
 
-![lazy-json-viewer screenshot](http://gilly3.com/ljv/ljv.png)
+![lazy-json-viewer screenshot](http://gilly3.com/ljv/ljv.png?1)
 
 ## Demo
 
