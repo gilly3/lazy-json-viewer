@@ -114,3 +114,24 @@
 .lazy-json-viewer .multiline {
     margin-left: 16px;
 }
+
+.lazy-json-viewer .expand-all {
+    position: absolute;
+    display: inline-block;
+    z-index: 2;
+    color: transparent;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.lazy-json-viewer .expand-all::before {
+    content: "expand all";
+}
+
+.lazy-json-viewer .json-expander:hover .expand-all {
+    color: inherit;
+}
+
+.lazy-json-viewer .property:not(.collapsed) > .json-expander > .expand-all {
+    margin-left: 3ch !important; /* override dynamic margin based on width of key count */
+}
