@@ -43,10 +43,9 @@
                 if (/"/.test(val)) {
                     if (/`/.test(val)) {
                         val = val.replace(/"/g, '\\"');
-
                     }
                     else {
-                        el.addClass("containsQuote");
+                        el.addClass("contains-quote");
                     }
                 }
             default:

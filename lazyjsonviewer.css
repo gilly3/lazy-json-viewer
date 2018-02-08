@@ -64,8 +64,8 @@
     content: '"';
 }
 
-.lazy-json-viewer .containsQuote::before,
-.lazy-json-viewer .containsQuote::after,
+.lazy-json-viewer .contains-quote::before,
+.lazy-json-viewer .contains-quote::after,
 .lazy-json-viewer .multiline::before,
 .lazy-json-viewer .multiline::after {
     content: "`";

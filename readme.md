@@ -69,4 +69,4 @@ This package comes with a default stylesheet, but you can override its styles in
 * `.json-expander` - This class is added to `.property-name` elements for expandable properties (non-empty objects and arrays, and multiline strings).  It adds a clickable indicator (via `::before`) to expand and collapse the property value.
 * `.collapsed` - This class is added to `.property` elements to hide the `.value-summary` and show the `.content`.
 * `.multiline` - This class is added to `.string-value` elements when the value contains a line break.
-* `.containsQuote` - This class is added to `.string-value` elements when the value contains a double quote character (and does not contain a backtick character).
+* `.contains-quote` - This class is added to `.string-value` elements when the value contains a double quote character (and does not contain a backtick character).
