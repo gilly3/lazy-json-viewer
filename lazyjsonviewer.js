@@ -1,7 +1,7 @@
 (function () {
     $.fn.jsonViewer = function (obj) {
         createViewer(obj, this);
-	return this;
+        return this;
     }
 
     function createViewer(obj, target) {
