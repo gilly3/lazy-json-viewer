@@ -64,10 +64,11 @@
     }
 
     function addExpander(val, el) {
-        if (!el.parent().is(".lazy-json-viewer")) {
-            var expander = el.parent().addClass("collapsed").children(".property-name").addClass("json-expander");
+        var property = el.parent();
+        if (!property.is(".lazy-json-viewer")) {
+            var expander = property.addClass("collapsed").children(".property-name").addClass("json-expander");
             expander.click(function (e) {
-                $(this).parent().toggleClass("collapsed");
+                property.toggleClass("collapsed");
             });
             return expander;
         }
