@@ -1,6 +1,6 @@
 {
   "name": "lazy-json-viewer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Expandable, collapsible, skinable, browser-based JSON viewer.  Renders nodes on demand, rather than all at once.",
   "main": "lazyjsonviewer.js",
   "repository": {
